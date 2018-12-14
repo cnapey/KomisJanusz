@@ -125,5 +125,8 @@
       <Name>KomisJanuszDane</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dokumentacja\1_Wprowadzenie\programowanie-obiektowe-WPF.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

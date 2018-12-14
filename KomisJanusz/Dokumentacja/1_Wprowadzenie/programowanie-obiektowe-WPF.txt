@@ -1,0 +1,64 @@
+Programowanie Obiektowe - Windows Presentation Foundation
+1. Podstawy tworzenie aplikacji Wpf
+a) zasada działania: 
+	- wątek aplikacji
+	- procedury obsługi zdarzeń
+b) podział na warstwę wizualną (język XAML) i kod źródłowy
+	- czym jest XAML ?
+	- podstawy tworzenia warstwy wizualnej w języku XAML
+	- łączenie warstwy wizualnej z kodem
+
+2. Okno główne aplikacji : konfiguracja właściwości w opisie warstwy wizualnej (XAML)
+	a) przykładowe parametry
+	b) tworzenie pliku zasobów - osadzanie elementów jako zasób
+	c) dodanie pliku JPG do zasobów - zmiana parametrów wpisu zasobu i konsekwencje jej braku
+	d) zmiana tła okna głównego aplikacji - wykorzystanie zasobu - parametry modyfikujące sposób wyświetlania
+	e) modyfikacja okna z poziomu kodu źródłowego - zmiana nazwy wyświetlanej w aplikacji
+
+3. Okno główne aplikacji : zdarzenia - przykłady wykorzystania
+	3.1 Dodawanie zdarzeń z poziomu edytora wizualnego Xaml
+		a) zdarzenie Initialized - ustawienie modyfikowania nazwy aplikacji po wywołaniu zdarzenia
+			- znaczenie argumentów funkcji obslugującej zdarzenie - klasa opisująca komponent a obiekt, typ danych "object"
+			- sprawdzanie typu obiektu - is / porownanie GetType() == typeof(X)
+			- rzutowanie obiektu na typ (as)
+			
+		b) zdarzenie Closing - przechwycenie akcji zamykania okna - dialog pytania użytkownika o działanie
+			- obsługa obiektu klasy MessageBox - czym tak naprawdę jest Singleton ?
+			- obsługa zdarzenia zamykania okna
+			
+		3.2 Dodawanie zdarzeń z poziomu kodu źródłowego:
+		a) zdarzenie Activated jako przykład modyfikacji obsługi zdarzeń z poziomu kodu źródłowego
+			- właściwości add/remove jako operatory dodawania/usuwania obsługi zdarzeń
+		b) śledzenie kodu w konsoli Debugowania - czyli Console.WriteLine w służbie analizowania działania aplikacji
+			- prototyp klasy logowania informacji o stanie aplikacji
+			- przeciążenie metody Write - wiele opcji użycia
+			- słowo kluczowe params - definicja funkcji z dynamiczną liczbą argumentów
+			- wykorzystanie funkcji String.Format
+		
+4. Tworzenie własnego dialogu - dialog logowania
+4.1 Koncepcja dialogu logowania - główne założenia
+4.2 Stworzenie nowego komponentu Wpf - okno jako dialog
+	a) Podstawowa konfiguracja okna dialogu
+		- własość okna WindowStyle 
+		- własość okna Topmost
+		- własość okna ResizeMode
+		- własność okna SizeToContent
+	b) Czym jest siatka (Grid) w komponencie okno (Window) ? Metoda konfigurowania
+	c) Metoda podawania wymiarów - względna i bezwzględna
+	d) Komponenty standardowe - paleta komponentów :
+		- właściwości pozycjonowania, szerokości i wysokości, marginesów zewnętrznych i wewnętrznych
+	e) Osadzanie komponentów na siatce 
+	f) Zagnieżdzanie i pozycjonowanie komponentów
+		- komponent Image
+		- komponent StackPanel - przykład konfiguracji - osadzenie komponentów Button, orientacja komponentu StackPanel
+	g) komponent Button - tworzymy przyciski logowania / wylogowania
+		- właściwość Name - nazywanie komponentów
+	f) część programistyczna - kod okna dialogu i jego komponentów
+	g) delegaty - definicja, zastosowanie
+		- implementacja metody autoryzującej użytkownika w module głównego okna aplikacji
+		- do czego służy metoda Invoke ?
+		
+5. Model danych - biblioteka dynamiczna
+5.1 Czym jest biblioteka dynamiczna ? Tworzymy nową bibliotekę z modelem danych
+
+	
