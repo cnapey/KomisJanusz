@@ -25,8 +25,21 @@ namespace KomisJanusz.Komponenty
         public bool CzyZalogowany { get; private set; }
         public AuthorizeLoginDelegate OnAuthorizeLogin;
 
-        public string Login { get => LoginField.Text; }
-        public string Password { get => PasswordField.Password; }
+        public string Login
+        {
+            get
+            {
+                return LoginField.Text;
+            }
+        }
+
+        public string Password
+        {
+            get
+            {
+                return PasswordField.Password;
+            }
+        }
 
         public DialogLogowania()
         {

@@ -16,10 +16,37 @@ namespace KomisJanuszDane
         private float fCenaZakupu;
         private float fMarza;
 
-        public int      TypPojazdu          { get => iTypPojazdu; }
-        public int      RokProdukcji        { get => iRokProdukcji; }
-        public float    CenaZakupu          { get => fCenaZakupu; }
-        public float    Marza               { get => fMarza; }
+        public int      TypPojazdu
+        {
+            get
+            {
+                return iTypPojazdu;
+            }            
+        }
+
+        public int RokProdukcji
+        {
+            get
+            {
+                return iRokProdukcji;
+            }
+        }
+
+        public float CenaZakupu
+        {
+            get
+            {
+                return fCenaZakupu;
+            }
+        }
+
+        public float    Marza
+        {
+            get
+            {
+                return fMarza;
+            }             
+        }
 
         public float CenaSprzedazy
         {
