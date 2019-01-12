@@ -61,26 +61,6 @@ namespace KomisJanusz {
         }
         
         /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap keyring {
-            get {
-                object obj = ResourceManager.GetObject("keyring", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap tlo_aplikacji {
-            get {
-                object obj = ResourceManager.GetObject("tlo_aplikacji", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu 1.0.
         /// </summary>
         public static string WersjaAplikacji {

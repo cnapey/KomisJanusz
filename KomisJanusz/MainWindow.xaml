@@ -14,10 +14,10 @@
         </Grid.RowDefinitions>
 
         <Menu x:Name="PasekMenu" Grid.Row="0" MinHeight="22" Padding="4" Foreground="Black">
-            <MenuItem Header="Opcje" BorderThickness="1" BorderBrush="Gray" Padding="4" Background="#FFD6D6D6">
-                <MenuItem Header="Opcja1"/>
-                <MenuItem Header="Opcja2"/>
-                <MenuItem Header="Opcja3"/>
+            <MenuItem Header="Opcje" BorderThickness="1" BorderBrush="Gray" Padding="4" Background="#FFD6D6D6" Click="MenuItem_Click">
+                <MenuItem Header="Dodaj nowy pojazd" Click="MenuItem_Click_2"/>
+                <MenuItem Header="Usuń pojazd" Click="MenuItem_Click_3"/>
+                <MenuItem Header="Zakończ program" Click="MenuItem_Click_1"/>
             </MenuItem>
         </Menu>
 

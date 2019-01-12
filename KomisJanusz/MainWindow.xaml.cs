@@ -161,5 +161,27 @@ namespace KomisJanusz
             okno.Show();
             this.Close();
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            okno2 okno = new okno2();
+            okno.Show();
+        }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            okno3 okno = new okno3();
+            okno.Show();
+        }
     }
 }

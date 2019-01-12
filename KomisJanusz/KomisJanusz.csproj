@@ -64,6 +64,12 @@
     <Compile Include="Komponenty\okno1.xaml.cs">
       <DependentUpon>okno1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Komponenty\okno2.xaml.cs">
+      <DependentUpon>okno2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Komponenty\okno3.xaml.cs">
+      <DependentUpon>okno3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Zasoby.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,6 +80,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Komponenty\okno1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Komponenty\okno2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Komponenty\okno3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,12 +135,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\tlo-aplikacji.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\keyring.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\KomisJanuszDane\KomisJanuszDane.csproj">
       <Project>{983d29d6-8782-4f43-b675-8bbfc2a3a5c1}</Project>
       <Name>KomisJanuszDane</Name>
@@ -137,6 +145,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\typowy_mirek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\zaloguj_sie.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

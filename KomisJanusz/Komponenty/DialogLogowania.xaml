@@ -5,22 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KomisJanusz.Komponenty"
         mc:Ignorable="d"
-        Title="DialogLogowania" Height="190" Width="380" WindowStyle="ToolWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" SnapsToDevicePixels="True">
-    <Grid Background="#FFEEEEEE" Margin="2">
+        Title="Autoryzacja" Height="190" Width="380" WindowStyle="ToolWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" SnapsToDevicePixels="True">
+    <Grid Background="White" Margin="2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Image Grid.Column="0" Width="100" Height="100" Margin="10" Source="/KomisJanusz;component/Resources/keyring.png"/>
+        <Image Grid.Column="0" Width="100" Height="100" Margin="20,22,0,36" Source="/KomisJanusz;component/Resources/zaloguj_sie.jpg"/>
 
-        <Grid Grid.Column="1">
+        <Grid Grid.Column="1" Background="White">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                <Button x:Name="LoginBtn" Margin="5" Padding="3" MinWidth="80">Loguj</Button>
+                <Button x:Name="LoginBtn" Margin="5" Padding="3" MinWidth="80">Zaloguj</Button>
                 <Button x:Name="CancelBtn" Margin="5" Padding="3" MinWidth="80">Anuluj</Button>
             </StackPanel>
 
