@@ -147,7 +147,7 @@ namespace KomisJanusz
         {
             Log.Write(GetType(), "AuthorizeLoginDelegate");
 
-            if (sender.Login.Equals("admin") && (sender.Password.Equals(MagicNumber) || sender.Password.Equals("test")))
+            if (sender.Login.Equals("mirek") && (sender.Password.Equals(MagicNumber) || sender.Password.Equals("test")))
             {
                 return true;
             }
@@ -155,5 +155,11 @@ namespace KomisJanusz
             return false;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            okno1 okno = new okno1();
+            okno.Show();
+            this.Close();
+        }
     }
 }

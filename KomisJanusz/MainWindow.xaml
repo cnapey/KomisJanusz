@@ -13,11 +13,11 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Menu x:Name="PasekMenu" Grid.Row="0" MinHeight="22" Padding="4" Foreground="Gray">
-            <MenuItem Header="Opcje" BorderThickness="1" BorderBrush="Gray" Padding="4">
-                <MenuItem Header="Test"/>
-                <MenuItem Header="Test1"/>
-                <MenuItem Header="Test2"/>
+        <Menu x:Name="PasekMenu" Grid.Row="0" MinHeight="22" Padding="4" Foreground="Black">
+            <MenuItem Header="Opcje" BorderThickness="1" BorderBrush="Gray" Padding="4" Background="#FFD6D6D6">
+                <MenuItem Header="Opcja1"/>
+                <MenuItem Header="Opcja2"/>
+                <MenuItem Header="Opcja3"/>
             </MenuItem>
         </Menu>
 
@@ -26,9 +26,13 @@
         </StatusBar>
 
         <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
             <Grid.Background>
                 <ImageBrush ImageSource="Resources/typowy_mirek.jpg" Opacity="0.8"/>
             </Grid.Background>
         </Grid>
+        <Button Content="test" HorizontalAlignment="Left" Margin="55,4,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click" RenderTransformOrigin="0.499,0.539" Height="26"/>
     </Grid>
 </Window>
