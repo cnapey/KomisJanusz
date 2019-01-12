@@ -128,5 +128,8 @@
   <ItemGroup>
     <Resource Include="Dokumentacja\1_Wprowadzenie\programowanie-obiektowe-WPF.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\typowy_mirek.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
