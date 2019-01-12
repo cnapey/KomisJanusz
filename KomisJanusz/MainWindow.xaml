@@ -33,6 +33,6 @@
                 <ImageBrush ImageSource="Resources/typowy_mirek.jpg" Opacity="0.8"/>
             </Grid.Background>
         </Grid>
-        <Button Content="test" HorizontalAlignment="Left" Margin="55,4,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click" RenderTransformOrigin="0.499,0.539" Height="26"/>
+        <Button Content="Katalog" HorizontalAlignment="Left" Margin="55,4,0,0" VerticalAlignment="Top" Width="45" Click="Button_Click" RenderTransformOrigin="0.499,0.539" Height="26"/>
     </Grid>
 </Window>
