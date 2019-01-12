@@ -24,8 +24,49 @@ namespace KomisJanusz.Komponenty
         {
             InitializeComponent();
 
+                List<User> items = new List<User>();
+                items.Add(new User (1972, 2000));
+                items.Add(new User (1972, 25000));
+                lvUsers.ItemsSource = items;
         }
 
+        public class User
+        {
+            public User(int v1, int v2)
+            {
+            }
+
+            public int Marka { get; set; }
+            public int Model { get; set; }
+        }
+        /*      private void WypelnijKatalog()
+              {
+                  TreeViewItem pojazdy = new TreeViewItem();
+                  pojazdy.Header = "Pojazdy w komisie";
+
+                  TreeViewItem sam = new TreeViewItem();
+                  sam.Header = "Samochody";
+
+                  TreeViewItem mot = new TreeViewItem();
+                  mot.Header = "Motocykle";
+
+                  List<Pojazd> garaz = new List<Pojazd>();
+                  garaz.Add(new Ranger(1972, 2000, 50));
+                  garaz.Add(new Ranger(1972, 25000, 500));
+                  garaz.Add(new Mustang(1972, 2000, 30));
+                  garaz.Add(new Mustang(1922, 20, 50));
+
+                  foreach (var samochod in garaz)
+                  {
+                      sam.Items.Add($"{samochod.Marka} {samochod.Model}");
+                  }
+
+                  pojazdy.Items.Add(sam);
+                  pojazdy.Items.Add(mot);
+
+                  Katalog.Items.Add(pojazdy);
+              }
+      */
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

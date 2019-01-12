@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace KomisJanuszDane
 {
@@ -100,6 +101,28 @@ namespace KomisJanuszDane
                 throw new PustyLancuchTekstowy("Model");
 
             return $"{NazwaTypuPojazdu} {Marka} {Model} ({RokProdukcji})";
+        }
+
+        static void Main(string[] args)
+        {
+            XDocument xml = new XDocument
+                (
+                    new XDeclaration("1.0", "utf-8", "yes"),
+                    new XComment("Dane do aplikacji Handlarz Mirek"),
+
+                    // dodajemy nowy element samochód
+                    new XElement("samochod",
+                        new XElement("ford",
+                            new XElement("x",
+                                new XElement("rok", "1998"),
+                                new XElement("cena", "3789")
+                            )
+                        )
+                    )
+                 );
+            xml.Save("HandlarzMirek.xml");
+            Console.WriteLine("Gotowe, naciśnij przycisk");
+            Console.ReadKey();
         }
 
     }

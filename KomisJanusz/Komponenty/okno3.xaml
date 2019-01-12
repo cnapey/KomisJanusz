@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KomisJanusz.Komponenty"
         mc:Ignorable="d"
-        Title="Usuń pojazd" Height="250" Width="400">
+        Title="Usuń pojazd" Height="270" Width="400">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="Black" Offset="0"/>
@@ -13,10 +13,17 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="188" Margin="22,21,0,0" VerticalAlignment="Top" Width="347">
-            <Button Content="Usuń!" HorizontalAlignment="Left" Margin="182,158,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-            <Button Content="Anuluj" HorizontalAlignment="Left" Margin="262,158,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Grid HorizontalAlignment="Left" Height="208" Margin="22,21,0,0" VerticalAlignment="Top" Width="347">
+            <Button Content="Usuń!" HorizontalAlignment="Left" Margin="182,178,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+            <Button Content="Anuluj" HorizontalAlignment="Left" Margin="262,178,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+            <ListView Margin="10,10,0,0" Name="lvUsers" HorizontalAlignment="Left" Height="163" VerticalAlignment="Top" Width="327">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Marka" Width="160" DisplayMemberBinding="{Binding Name}" />
+                        <GridViewColumn Header="Model" Width="160" DisplayMemberBinding="{Binding Age}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
         </Grid>
-
     </Grid>
 </Window>

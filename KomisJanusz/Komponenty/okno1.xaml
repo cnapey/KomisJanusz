@@ -15,18 +15,17 @@
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="25*"/>
-            <ColumnDefinition Width="42*"/>
-            <ColumnDefinition Width="725*"/>
+            <ColumnDefinition Width="767*"/>
         </Grid.ColumnDefinitions>
-        <TreeView Name="Katalog" HorizontalAlignment="Left" Height="409" Margin="10,0,0,0" VerticalAlignment="Top" MinWidth="200" Grid.ColumnSpan="3"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="39" Margin="200,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" TextChanged="marka_text" Name="marka"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="39" Margin="200,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" TextChanged="rok_text" Name="rok"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="39" Margin="428,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" TextChanged="model_text" Name="model"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="39" Margin="428,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" TextChanged="cena_text" Name="cena"/>
-        <Label Content="Marka:" Grid.Column="2" HorizontalAlignment="Left" Margin="200,149,0,0" VerticalAlignment="Top" Width="136"/>
-        <Label Content="Model:" Grid.Column="2" HorizontalAlignment="Left" Margin="428,149,0,0" VerticalAlignment="Top" Width="136"/>
-        <Label Content="Rok Produkcji:" Grid.Column="2" HorizontalAlignment="Left" Margin="200,238,0,0" VerticalAlignment="Top" Width="136"/>
-        <Label Content="Cena Końcowa:" Grid.Column="2" HorizontalAlignment="Left" Margin="428,238,0,0" VerticalAlignment="Top" Width="136"/>
+        <TreeView Name="Katalog" HorizontalAlignment="Left" Height="409" Margin="10,0,0,0" VerticalAlignment="Top" MinWidth="200" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="242,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" TextChanged="marka_text" Name="marka"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="242,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" TextChanged="rok_text" Name="rok"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="470,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" TextChanged="model_text" Name="model"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="470,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" TextChanged="cena_text" Name="cena"/>
+        <Label Content="Marka:" Grid.Column="1" HorizontalAlignment="Left" Margin="242,149,0,0" VerticalAlignment="Top" Width="136"/>
+        <Label Content="Model:" Grid.Column="1" HorizontalAlignment="Left" Margin="470,149,0,0" VerticalAlignment="Top" Width="136"/>
+        <Label Content="Rok Produkcji:" Grid.Column="1" HorizontalAlignment="Left" Margin="242,238,0,0" VerticalAlignment="Top" Width="136"/>
+        <Label Content="Cena Końcowa:" Grid.Column="1" HorizontalAlignment="Left" Margin="470,238,0,0" VerticalAlignment="Top" Width="136"/>
 
 
 

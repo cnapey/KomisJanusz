@@ -11,7 +11,7 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Image Grid.Column="0" Width="100" Height="100" Margin="20,22,0,36" Source="/KomisJanusz;component/Resources/zaloguj_sie.jpg"/>
+        <Image Grid.Column="0" Width="100" Height="110" Margin="20,16,0,42" Source="/KomisJanusz;component/Resources/zaloguj_sie.jpg"/>
 
         <Grid Grid.Column="1" Background="White">
             <Grid.RowDefinitions>

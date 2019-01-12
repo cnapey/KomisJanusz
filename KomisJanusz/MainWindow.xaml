@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KomisJanusz"
         mc:Ignorable="d"
-        Title="Aplikacja obsługi komisu" Height="550" Width="800" WindowStartupLocation="CenterScreen" Initialized="OnInitialized">
+        Title="Handlarz Mirek Application" Height="550" Width="800" WindowStartupLocation="CenterScreen" Initialized="OnInitialized" Background="#FF150404">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
