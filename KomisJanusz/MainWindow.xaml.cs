@@ -21,9 +21,6 @@ using KomisJanuszDane.Pojazdy.Samochody;
 
 namespace KomisJanusz
 {
-    /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private string MagicNumber;
@@ -132,7 +129,6 @@ namespace KomisJanusz
         {
             okno1 okno = new okno1();
             okno.Show();
-            this.Close();
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)

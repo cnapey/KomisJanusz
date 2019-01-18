@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace KomisJanusz.Komponenty
 {
-    /// <summary>
-    /// Logika interakcji dla klasy okno3.xaml
-    /// </summary>
     public partial class okno3 : Window
     {
         public okno3()

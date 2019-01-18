@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace KomisJanusz.Komponenty
 {
-    /// <summary>
-    /// Logika interakcji dla klasy okno1.xaml
-    /// </summary>
     public partial class okno1 : Window
     {
         private void WyslijKatalog(Pojazd pojazd)
@@ -85,6 +82,11 @@ namespace KomisJanusz.Komponenty
         private void cena_text(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

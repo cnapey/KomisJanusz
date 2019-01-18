@@ -14,14 +14,26 @@ using System.Windows.Shapes;
 
 namespace KomisJanusz.Komponenty
 {
-    /// <summary>
-    /// Logika interakcji dla klasy okno2.xaml
-    /// </summary>
     public partial class okno2 : Window
     {
         public okno2()
         {
             InitializeComponent();
         }
+
+        private void dodaj_auto(object sender, RoutedEventArgs e)
+        {
+            /*pobiera wpisane dane
+            dodaj_marke.Text
+            dodaj_model.Text
+            dodaj_rok.Text
+            dodaj_cene.Text */
+        }
+
+        private void anuluj_dodawanie(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using KomisJanusz.Klasy;
 
 namespace KomisJanusz.Komponenty
@@ -66,7 +56,12 @@ namespace KomisJanusz.Komponenty
                 switch (instancja.Name)
                 {
                     case "LoginBtn":                        
-                        AuthorizeLoginDialog(); break;
+                        AuthorizeLoginDialog();
+/*
+                        WindowsMediaPlayer dzwiek = new WindowsMediaPlayer();
+                        dzwiek.URL = @"D:\Marta\INZYNIERKA\Projekt\Sounds\Zad1.wav";
+                        dzwiek.controls.play(); */
+                        break;
 
                     case "CancelBtn":
                         CancelLoginDialog(); break;
@@ -138,6 +133,10 @@ namespace KomisJanusz.Komponenty
 
                 instancja.LoginField.Focus();
             }
+        }
+
+        private class WindowsMediaPlayer
+        {
         }
     }
 }
